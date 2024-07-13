@@ -1,6 +1,7 @@
 # Django-React-Project
+Develop and integrate RESTful APIs using Django REST Framework to connect React front-end applications with back-end services
 
-## Setup
+## backend setup and run
 
 ```Shell
 # clone repository
@@ -13,8 +14,16 @@ python -m venv .venv
 
 # install packages
 pip install -r requirements.txt
-npm i
+python manage.py makemigrations
+python manage.py migrate
 
-# runserver
+# backend runserver
 python manage.py runserver
+```
+## frontend setup and run
+```Shell
+cd Django-React-Project/frontend
+npm i
+# frontend runserver
+npm run dev
 ```
